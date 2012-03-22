@@ -2,10 +2,10 @@
 
 This is a association builder which helps to generate or get associated object with `belogs_to` or `has_one` association.
 
-##Installation
+## Installation
 
 Add this line to your Gemfile
-`gem 'get_or_build'`
+`gem 'GetOrBuild'`
 then as usually update installed gem by typing `bundle` in terminal.
 
 ## Using with ActiveRecord
