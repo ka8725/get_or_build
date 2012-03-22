@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "get_or_build/version"
 
 Gem::Specification.new do |s|
-  s.name        = "Association builder"
+  s.name        = "GetOrBuild"
   s.version     = FieldsForBuilder::VERSION
   s.authors     = ["Andrey Koleshko"]
   s.email       = ["ka8725@gmail.com"]
