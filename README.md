@@ -5,7 +5,7 @@ This is a association builder which helps to generate or get associated object w
 ## Installation
 
 Add this line to your Gemfile
-`gem 'GetOrBuild'`
+`gem 'get_or_build'`
 then as usually update installed gem by typing `bundle` in terminal.
 
 ## Using with ActiveRecord
