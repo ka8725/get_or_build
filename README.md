@@ -6,7 +6,7 @@ This is a association builder which helps to generate or get associated object w
 
 Add this line to your Gemfile
 `gem 'get_or_build'`
-then as usually update installed gem by typing `bundle` in terminal.
+then as usually update installed gem by typing `bundle` in your command-line interface.
 
 ## Using with ActiveRecord
 
@@ -37,7 +37,7 @@ No longer need to call `f.object.user || f.object.build_user`
 Just include in your document module `GetOrBuild::AssociationBuilder` and it will attach magick methods automatically
 
 ## Contributing
-You are welcome! Please, run test before pull request: `ruby test/*.rb` and make sure if everything is workig correctly.
+You are welcome! Please, run test before pull request: `rake` and make sure if everything is workig correctly.
 
 ## TODO
 * tests for `MongoMapper`

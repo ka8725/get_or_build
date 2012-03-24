@@ -1,6 +1,8 @@
-require File.expand_path('../test_helper', __FILE__)
+require 'test_helper'
 
-class ActiveRecordTest < TestHelper
+class ActiveRecordTest < Test::Unit::TestCase
+  include Support::ActiveRecordConnection
+
   def test_with_new_record
     c = Company.new
     assert_not_nil c.location_or_build
