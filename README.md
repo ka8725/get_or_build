@@ -1,6 +1,6 @@
 # GetOrBuild
 
-This is a association builder which helps to generate or get associated object with `belogs_to` or `has_one` association.
+This is a association builder which helps to generate or get associated object with `belongs_to` or `has_one` association.
 
 ## Installation
 
