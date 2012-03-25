@@ -34,10 +34,20 @@ No longer need to call `f.object.user || f.object.build_user`
 
 ## Using with NoSQL databases
 
-Just include in your document module `GetOrBuild::AssociationBuilder` and it will attach magick methods automatically
+Just include in your document module `GetOrBuild::AssociationBuilder` and it will attach magic methods automatically
+
+## Extension for fields_for method
+
+You are able also to use option `:build_association` for `fields_for` method to build association if it doesn't exist yet:
+
+		form_for :company do |f|
+			f.fields_for :user, :build_association => true do |fu|
+				fu.text_field :name
+			f.fields_for :user, :build_association => true do |fl|
+				fl.text_field :address
 
 ## Contributing
-You are welcome! Please, run test before pull request: `rake` and make sure if everything is workig correctly.
+You are welcome! Please, run test before pull request: `rake` and make sure if everything is working correctly.
 
 ## TODO
-* tests for `MongoMapper`
+* Support NoSQL databases

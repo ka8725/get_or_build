@@ -11,12 +11,12 @@ module GetOrBuild
     # Here the method `company_or_build` for `User` instane `u` was generated
     def method_missing(method, *args)
       if method =~ /(\w+)_or_build$/
-        if result = send($1, *args)
-          result
-        else
-          builder_method = "build_#{$1}"
-          send(builder_method, *args) if respond_to?(builder_method)
-        end
+        if result = send($1, *args)                                       # if result = send("company", *args)
+          result                                                          #   result
+        else                                                              # else
+          builder_method = "build_#{$1}"                                  #   builder_method = "build_company"
+          send(builder_method, *args) if respond_to?(builder_method)      #   send(builder_method, *args) if respond_to?(builder_method)
+        end                                                               # end
       else
         super
       end
