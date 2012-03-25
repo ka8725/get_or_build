@@ -46,8 +46,10 @@ You are able also to use option `:build_association` for `fields_for` method to 
 			f.fields_for :user, :build_association => true do |fl|
 				fl.text_field :address
 
+If you initialize associated object user for company before run `fields_for` helper then option `:build_association` won't give any effect
+
 ## Contributing
 You are welcome! Please, run test before pull request: `rake` and make sure if everything is working correctly.
 
 ## TODO
-* Support NoSQL databases
+* Support for NoSQL databases
