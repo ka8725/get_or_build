@@ -50,9 +50,9 @@
       Association builder for belongs_to and has_one association
     </div>
       <p>
-        This is a gem which will help you to avoid duplicated code like <code>f.object.user || f.object.build_user</code> for <code>belongs_to</code> and <code>has_one</code> association.
-        Use <code>f.object.user_or_build</code> instead of this peace of code. There is no longer reason to type stupid duplicated code like <code>f.object.user || f.object.build_user</code>! Also you are able to call
-        <code>f.fields_for :user, :build_association => true</code> and that's it - you will have new builded associatiated object user if it doesn't exist yet.
+        This is a gem which will help you to avoid duplicated code like <pre>f.object.user || f.object.build_user</pre> for <code>belongs_to</code> and <code>has_one</code> association.
+        Use <pre>f.object.user_or_build</pre> instead of this peace of code. There is no longer reason to type stupid duplicated code like <pre>f.object.user || f.object.build_user</pre>! Also you are able to call
+        <pre>f.fields_for :user, :build_association => true</pre> and that's it - you will have new builded associatiated object <code>user</code> if it doesn't exist yet.
       </p>
       <h2>Dependencies</h2>
       <p>None</p>
