@@ -12,8 +12,7 @@ module GetOrBuild
                                when Array
                                   ActiveModel::Naming.param_key(record_name.last)
                                end
-            build_method  = "build_#{association_name}"
-            record_object = @object.send(build_method) if !record_object && !@object.send(association_name) && @object.respond_to?(build_method)
+            record_object = @object.send("#{association_name}_or_build") if !record_object
           end
 
           fields_for_without_association_builder(record_name, record_object, fields_options, &block)
