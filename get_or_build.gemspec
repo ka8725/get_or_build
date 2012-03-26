@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["ka8725@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{Provides method which allows get or build belongs_to or has_one association}
-  s.description = %q{Assume user belongs_to company and you want to get company object within one method call. You can do it like this: user.company_or_build}
+  s.description = %q{Build assocation for fields_for automatically if it doesn't exist yet. It is very simple!}
 
   s.rubyforge_project = "get_or_build"
 
